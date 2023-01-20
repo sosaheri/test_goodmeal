@@ -1,66 +1,50 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Sobre la Prueba
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Ejercicio 1
 
-## About Laravel
+En este test esperamos poder ver todo el conocimiento que tienes al momento de desarrollar
+software, ver cuál es tu acercamiento a la solución y cuáles buenas prácticas manejas. Por
+favor lee todo el enunciado antes de comenzar.
+Para ello te presentamos el problema a resolver a continuación:
+Debes crear un sitio similar a la app de GoodMeal, usando para el Front Vue 2/3 (con
+cualquier lib de CSS) y para el backend usar Laravel 8 o superior.
+Para esto, debes considerar:
+Tenemos las siguientes vistas principales (ver imágenes):
+- Home de tiendas con una vista similar a la app
+- Interior de una tienda
+- Lista de órdenes
+- Vista de una orden
+- Comprar productos (libre el diseño)
+Las funciones son simples:
+- Puedo ver lista de tiendas existentes y con stock
+- Puedo acceder a una tienda y ver sus productos
+- Puedo comprar productos, que generan una orden de compra
+- Puedo entrar a ver mi lista de órdenes
+- Puedo entrar a ver la información de una orden.
+Debes construir una API que permita:
+- CRUD de tiendas
+- CRUD de productos de tiendas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Los modelos de datos, referente a lo que tiene cada modelo, puedes guiarte por las imágenes y
+agregar cosas que consideres importantes. Aquí el usuario es único, por lo tanto, el que lo use
+es el usuario, en consecuencia no hay problema con asociar las órdenes.
+Resumiendo, debes crear un backend en laravel que permita usar el front en vue y una API en
+laravel que permita agregar data al backend.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+### Reglas de evaluación
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Esperamos los tres servicios en un solo repositorio, ordenados como mejor te convenga
+- Queremos entender como fue que completaste la implementación, por lo tanto, debemos ser
+capaces de leer una historia al revisar los commits del repositorio, esperamos comentarios
+atingentes a lo que se hizo, hazlo con calma y organízate bien.
+- Dentro del repo, debe existir un archivo Dockerfile/Compose que permita ejecutar todos los
+servicios, para ser probados.
+- Debemos contar con documentación de como usar la API. (OpenAPI)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Debemos tener 100% de cobertura de TEST, para el código que has implementado,
+importante contar con el comando para ejecutar los tests.
+- Solo vamos a considerar tu solución, si nos envías el enlace con tu propio repositorio con la
+solución propuesta (github, gitlab, etc).
+- Debes documentar el diseño de tu solución, para entender como estar organizado.
